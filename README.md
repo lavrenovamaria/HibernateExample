@@ -169,13 +169,7 @@ spring.datasource.driver-class-name=org.postgresql.Driver: Здесь указы
 
 Этот файл является конфигурационным файлом Hibernate, который определяет настройки и параметры для работы Hibernate в вашем приложении. Давайте разберем его построчно:
 
-````
-<?xml version="1.0" encoding="UTF-8"?>: 
-Эта строка указывает, что файл является XML-документом и использует кодировку UTF-8.
-
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">: 
-Эта строка определяет DTD (Document Type Definition) для данного XML-документа. 
-Он используется для валидации структуры файла.
+```javascript
 
 <hibernate-configuration>: 
 Начало корневого элемента конфигурации Hibernate.
