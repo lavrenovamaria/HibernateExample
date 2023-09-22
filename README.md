@@ -170,32 +170,61 @@ spring.datasource.driver-class-name=org.postgresql.Driver: Здесь указы
 Этот файл является конфигурационным файлом Hibernate, который определяет настройки и параметры для работы Hibernate в вашем приложении. Давайте разберем его построчно:
 
 ````
-<?xml version="1.0" encoding="UTF-8"?>: Эта строка указывает, что файл является XML-документом и использует кодировку UTF-8.
+<?xml version="1.0" encoding="UTF-8"?>: 
+Эта строка указывает, что файл является XML-документом и использует кодировку UTF-8.
 
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">: Эта строка определяет DTD (Document Type Definition) для данного XML-документа. Он используется для валидации структуры файла.
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">: 
+Эта строка определяет DTD (Document Type Definition) для данного XML-документа. 
+Он используется для валидации структуры файла.
 
-<hibernate-configuration>: Начало корневого элемента конфигурации Hibernate.
+<hibernate-configuration>: 
+Начало корневого элемента конфигурации Hibernate.
 
-<session-factory>: Этот элемент содержит настройки для фабрики сессий Hibernate. Фабрика сессий отвечает за создание и управление сессиями Hibernate.
+<session-factory>: 
+Этот элемент содержит настройки для фабрики сессий Hibernate. 
+Фабрика сессий отвечает за создание и управление сессиями Hibernate.
 
-<property name="hibernate.current_session_context_class">thread</property>: Эта строка определяет текущий контекст сессии Hibernate как "thread". Это означает, что сессия будет ассоциирована с текущим потоком выполнения.
+<property name="hibernate.current_session_context_class">thread</property>: 
+Эта строка определяет текущий контекст сессии Hibernate как "thread". 
+Это означает, что сессия будет ассоциирована с текущим потоком выполнения.
 
-<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>: Здесь указывается класс JDBC-драйвера для PostgreSQL.
+<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>: 
+Здесь указывается класс JDBC-драйвера для PostgreSQL.
 
-<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>: Эта строка определяет URL-адрес базы данных PostgreSQL, к которой Hibernate будет подключаться.
+<property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property>: 
+Эта строка определяет URL-адрес базы данных PostgreSQL, 
+к которой Hibernate будет подключаться.
 
-<property name="hibernate.connection.username">postgres</property>: Имя пользователя, используемое для подключения к базе данных PostgreSQL.
+<property name="hibernate.connection.username">postgres</property>: 
+Имя пользователя, используемое для подключения к базе данных PostgreSQL.
 
-<property name="hibernate.connection.password">5432</property>: Пароль, необходимый для аутентификации при подключении к базе данных. Обратите внимание, что пароль обычно не указывается в открытом виде в конфигурационных файлах из-за соображений безопасности.
+<property name="hibernate.connection.password">5432</property>: 
+Пароль, необходимый для аутентификации при подключении к базе данных. 
+Обратите внимание, что пароль обычно не указывается в открытом виде в 
+конфигурационных файлах из-за соображений безопасности.
 
-<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>: Указывается диалект базы данных PostgreSQL, который Hibernate будет использовать для генерации SQL-запросов.
+<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>: 
+Указывается диалект базы данных PostgreSQL, который Hibernate будет 
+использовать для генерации SQL-запросов.
 
-<property name="hibernate.show_sql">true</property>: Если значение установлено как "true", Hibernate будет выводить SQL-запросы, которые он выполняет, в журнал.
+<property name="hibernate.show_sql">true</property>: 
+Если значение установлено как "true", Hibernate будет выводить SQL-запросы, 
+которые он выполняет, в журнал.
 
-<property name="hibernate.format_sql">true</property>: Если значение установлено как "true", Hibernate будет форматировать вывод SQL-запросов для лучшей читаемости.
+<property name="hibernate.format_sql">true</property>: 
+Если значение установлено как "true", Hibernate будет форматировать 
+вывод SQL-запросов для лучшей читаемости.
 
-<property name="hbm2ddl.auto">update</property>: Эта строка определяет, как Hibernate будет обновлять схему базы данных. Значение "update" означает, что Hibernate будет автоматически обновлять схему на основе изменений в классах сущностей.
+<property name="hbm2ddl.auto">update</property>: 
+Эта строка определяет, как Hibernate будет обновлять схему базы данных. 
+Значение "update" означает, что Hibernate будет автоматически обновлять 
+схему на основе изменений в классах сущностей.
 
-<mapping class="com.example.hibernateexample.Employee"/>: Этот элемент указывает Hibernate на класс сущности, который он должен использовать для маппинга данных между объектами Java и таблицами базы данных. В данном случае, это класс com.example.hibernateexample.Employee.
+<mapping class="com.example.hibernateexample.Employee"/>: 
+Этот элемент указывает Hibernate на класс сущности, который 
+он должен использовать для маппинга данных между объектами 
+Java и таблицами базы данных. В данном случае, это класс com.example.hibernateexample.Employee.
 
-Этот файл конфигурации Hibernate определяет основные параметры подключения к базе данных, диалект SQL, и классы, которые должны быть сопоставлены с таблицами базы данных.
+Этот файл конфигурации Hibernate определяет основные 
+параметры подключения к базе данных, диалект SQL, и классы, 
+которые должны быть сопоставлены с таблицами базы данных.
