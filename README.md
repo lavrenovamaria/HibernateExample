@@ -17,7 +17,7 @@ public class HibernateExampleApplication {
 
 Это точка входа для вашего приложения Spring Boot,
 и она отвечает за инициализацию и запуск приложения
-Spring Boot.
+Spring Boot. 
 
 Этот класс обычно используется, когда вы
 хотите запустить веб-приложение Spring Boot.
