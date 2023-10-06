@@ -25,7 +25,7 @@ Spring Boot.
 Здесь прописан void main(String[] args
 
 @SpringBootApplication — это аннотация,
-указывающая, что это приложение Spring Boot.
+указывающая, что это приложение Spring Boot. 
 
 ```java
 package com.example.hibernateexample;
