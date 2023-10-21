@@ -53,7 +53,7 @@ public class EmployeeDemo {
                     .addAnnotatedClass(Employee.class) // добавляем класс Employee как сущность Hibernate
                     .buildSessionFactory();
 
-            // Создаем сессию Hibernate
+            // Создаем сессию Hibernate   
             session = factory.openSession();
 
             // Создаем объект Employee
