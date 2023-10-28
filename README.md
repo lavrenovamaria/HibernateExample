@@ -20,7 +20,7 @@ public class HibernateExampleApplication {
 Spring Boot. 
 
 Этот класс обычно используется, когда вы
-хотите запустить веб-приложение Spring Boot.
+хотите запустить веб-приложение Spring Boot. 
 
 Здесь прописан void main(String[] args
 
