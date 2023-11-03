@@ -1,6 +1,6 @@
 # HibernateExample
 
-``` java
+``` java 
 package com.example.hibernateexample;
 
 import org.springframework.boot.SpringApplication;      
